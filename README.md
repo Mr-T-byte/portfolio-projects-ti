@@ -1,44 +1,28 @@
-estoque = {}  
-def adicionar_item(nome, quantidade):
-    if nome in estoque:
-        estoque[nome] += quantidade
-    else:
-        estoque[nome] = quantidade
-    print(f"Adicionado {quantidade} de {nome}. Estoque atual: {estoque[nome]}")
+# Portfólio de Projetos TI - Luiz Augusto Elias Souza Sacramento
 
-def remover_item(nome, quantidade):
-    if nome in estoque and estoque[nome] >= quantidade:
-        estoque[nome] -= quantidade
-        print(f"Removido {quantidade} de {nome}. Estoque atual: {estoque[nome]}")
-    else:
-        print(f"Item {nome} não encontrado ou quantidade insuficiente.")
+Bem-vindo ao meu portfólio! Aqui estão projetos pessoais em **Python** (scripts de automação) e **Java** (orientação a objetos), desenvolvidos para demonstrar minhas habilidades iniciais em programação.
 
-def listar_estoque():
-    print("Estoque atual:")
-    for item, qtd in estoque.items():
-        print(f"- {item}: {qtd}")
-    verificar_estoque_baixo()
+Estou cursando **Engenharia de Software** na UCSal (início em 2025) e busco oportunidades em desenvolvimento backend, integrações, correção de bugs e suporte técnico.
 
-def verificar_estoque_baixo(limite=5):
-    baixos = [item for item, qtd in estoque.items() if qtd < limite]
-    if baixos:
-        print(f"Atenção: Itens com estoque baixo (< {limite}): {', '.join(baixos)}")
+## Projetos Destacados
 
-adicionar_item("Parafuso", 100)
-adicionar_item("Óleo de Motor", 20)
-remover_item("Parafuso", 10)
-listar_estoque()
-while True:
-     opcao = input("Digite 'add', 'rem', 'list' ou 'sair': ")
-     if opcao == 'add':
-         nome = input("Nome do item: ")
-         qtd = int(input("Quantidade: "))
-         adicionar_item(nome, qtd)
-     elif opcao == 'rem':
-         nome = input("Nome do item: ")
-         qtd = int(input("Quantidade: "))
-         remover_item(nome, qtd)
-     elif opcao == 'list':
-         listar_estoque()
-     elif opcao == 'sair':
-         break
+### Python - Automação
+- **Gerenciador de Estoque**  
+  Script simples para adicionar/remover/listar itens e alertar estoque baixo.  
+  Inspirado na experiência prática em controle de estoque.  
+  Pasta: `/python-automacao/gerenciador_estoque.py`  
+  Tecnologias: Python (dicionários, funções, loops)
+
+(Adicione mais projetos aqui conforme subir os outros!)
+
+## Habilidades Demonstradas
+- Lógica de programação e fundamentos em Python/Java
+- Organização de código e comentários
+- Uso de Git/GitHub para versionamento
+
+## Contato
+- E-mail: luizsacramento135@gmail.com
+- Telefone: (71) 99995-3358
+- LinkedIn: https://www.linkedin.com/in/luiz-augusto-elias-souza-sacramento-1a3199339
+
+Obrigado por visitar! 🚀
